@@ -1,0 +1,34 @@
+.about {
+    background-color: #FFE354;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.header {
+    color: #ED8EB9;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.description {
+    text-align: left;
+    font-family: Rambla;
+    color: #7BC0F5;
+    font-size: 24px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.left {
+    margin-left: 5%;
+}
+
+.profile_picture {
+    
+}
