@@ -5,8 +5,8 @@ import "../css/Project.css"
 
 export default function Project(prop) {
     return (
-        <div className="project" ref={prop.reference}>
-            <motion.h1 className="project-feature-header"
+        <div className="project">
+            <motion.h1 className="project-feature-header" ref={prop.reference}
             initial="hidden"
             transition={{ duration: 1.5 }}
             whileInView="visible"
@@ -31,11 +31,33 @@ export default function Project(prop) {
                     <motion.p className="project-sutton-text"
                     whileInView={{ x: ["100%", "0%"] }}
                     transition={{ duration: 1.5 }}
-                    viewport={{ once: true }}>A website made for a local pool company made on WordPress using HTML, CSS, and WordPress plugins.
+                    viewport={{ once: true }}>A responsive website made for a local pool company made on WordPress using HTML, CSS, and WordPress plugins.
                     This website is an overview about the pool company that goes over their different services as well as their location and contact information.
                     <br></br>
                     <br></br>
                     <a href="https://suttonspool.com/">-Website</a></motion.p>
+                </div>
+            </div>
+            <div>
+                <motion.h1 className="project-other-header"
+                initial="hidden"
+                transition={{ duration: 1.5 }}
+                whileInView="visible"
+                animate={{ y: ["50%", "0%"] }}
+                viewport= {{ once: true }}
+                variants={{ visible: {opacity: 1, scale: 1, y: ["50%", "0%"]}, hidden: {opacity: 0, scale: 1} }}>Other Project</motion.h1>
+                <motion.div className="project-first"
+                whileInView={{ x: ["-150%", "0%"] }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5 }}>
+                    <h2 className="project-first-title">Kindling</h2>
+                    <p className="project-first-desc">A mobile and web application that allows individuals to find a group, and vice versa, for a project. This project implemented a Tinder like system where individuals and groups can swipe left and right on their associated counterpart inorder to find who they are looking for.  My responsibilites for this project were focused towards the mobile-end which we successfully accomplished using React Native, with additions of third party Javascript libraries. 
+                    <br></br>
+                    <br></br>
+                    <a href="https://github.com/kiers10/kindling-21-mobile">-Github</a></p>
+                </motion.div>
+                <div>
+
                 </div>
             </div>
         </div>

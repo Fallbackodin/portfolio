@@ -1,12 +1,12 @@
 .project {
     background-color: #E270A4;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 .project-feature-header {
     margin: 0;
     font-family: "Satisfy";
-    font-size: 96px;
+    font-size: 64px;
     color: #7BC0F5;
     text-align: center;
 }
@@ -15,7 +15,7 @@
     margin: 0;
     color: #FDFD96;
     font-family: "Satisfy";
-    font-size: 96px;
+    font-size: 64px;
     text-align: center;
 }
 
@@ -44,4 +44,32 @@
     text-align: left;
     font-size: 24px;
     color: white;
+    font-family: "Rambla";
+}
+
+.project-other-header {
+    text-align: center;
+    color: #FFB68C;
+    font-family: "Satisfy";
+    font-size: 64px;
+    margin-top: 5%;
+}
+
+.project-first {
+    margin: 5%;
+}
+
+.project-first-title {
+    text-align: left;
+    font-size: 64px;
+    font-family: "Satisfy";
+    color: #FDFD96;
+    margin: 0;
+}
+
+.project-first-desc {
+    color: white;
+    font-size: 24px;
+    font-family: "Rambla";
+    
 }
