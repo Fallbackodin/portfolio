@@ -1,6 +1,8 @@
 import React from "react"
 import { motion } from "framer-motion"
+import DevIcon from "devicon-react-svg";
 import Sutton from "../SuttonWebsite.svg"
+import web from "../website.svg"
 import "../css/Project.css"
 
 export default function Project(prop) {
@@ -35,7 +37,7 @@ export default function Project(prop) {
                     This website is an overview about the pool company that goes over their different services as well as their location and contact information.
                     <br></br>
                     <br></br>
-                    <a href="https://suttonspool.com/">-Website</a></motion.p>
+                    <a href="https://suttonspool.com/"><img src={web} className="project-web-icon"></img></a></motion.p>
                 </div>
             </div>
             <div>
@@ -54,7 +56,7 @@ export default function Project(prop) {
                     <p className="project-first-desc">A mobile and web application that allows individuals to find a group, and vice versa, for a project. This project implemented a Tinder like system where individuals and groups can swipe left and right on their associated counterpart inorder to find who they are looking for.  My responsibilites for this project were focused towards the mobile-end which we successfully accomplished using React Native, with additions of third party Javascript libraries. 
                     <br></br>
                     <br></br>
-                    <a href="https://github.com/kiers10/kindling-21-mobile">-Github</a></p>
+                    <a href="https://github.com/kiers10/kindling-21-mobile"><DevIcon icon="github" className="project-github-icon"/></a></p>
                 </motion.div>
             </div>
         </div>

@@ -18,10 +18,10 @@ export default function Contact() {
             viewport={{ once: true }}
             variants={{ visible: {opacity: 1, scale: 1, y: ["50%", "0%"]}, hidden: {opacity: 0, scale: 1} }}>
                 <div className="contact-column">
-                    <input type="text" placeholder="Name" className="contact-upper-input"/>
+                    <textarea type="text" placeholder="Name" className="contact-upper-input"/>
                 </div>
                 <div className="contact-column">
-                    <input type="text" placeholder="Email" className="contact-upper-input"/>
+                    <textarea type="text" placeholder="Email" className="contact-upper-input"/>
                 </div>
             </motion.div>
             <motion.div className="contact-message"

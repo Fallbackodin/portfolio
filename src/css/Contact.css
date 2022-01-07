@@ -33,9 +33,12 @@
 
 .contact-upper-input {
     padding: 20px;
+    padding-top: 25px;
     width: 75%;
     border-radius: 50px;
     height: 25px;
+    outline: none;
+    border: none;
 }
 
 .contact-message {
@@ -44,15 +47,17 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .contact-message-input {
     border-radius: 50px;
     width: 85%;
-    padding: 20px;
+    padding: 25px;
     padding-bottom: 25%;
     overflow: auto;
+    outline: none;
+    border: none;
 }
 
 .contact-submit-button {
@@ -62,12 +67,12 @@
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 25px;
-    background-color: #FDFD96;
+    background-color: white;
     cursor: pointer;
 }
 
 .contact-submit-text {
-    color: #77BBCC;
+    color: #4525DA;
     font-size: 24px;
     font-weight: bold;
 }
