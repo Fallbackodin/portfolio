@@ -15,9 +15,11 @@
 .skill-row {
     display: flex;
     width: 95%;
-    justify-content: center;
-    align-items: center;
-}
+    /* The rules below are if the icons should not take as much horizontal space as well as centering it to the screen
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%; */
+} 
 
 .skill-col {
     flex: 50%;
