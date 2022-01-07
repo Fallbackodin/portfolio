@@ -56,9 +56,6 @@ export default function Project(prop) {
                     <br></br>
                     <a href="https://github.com/kiers10/kindling-21-mobile">-Github</a></p>
                 </motion.div>
-                <div>
-
-                </div>
             </div>
         </div>
     )

@@ -27,7 +27,7 @@ export default function About() {
                     -A big UCF and Jaguars Fans!</motion.p>
                 </div>
                 <div className="column">
-                    <motion.img className="profile_picture" src={ProfilePic}
+                    <motion.img className="profile-picture" src={ProfilePic}
                     whileInView="visible"
                     transition={{ duration: 1.5 }}
                     initial="hidden"

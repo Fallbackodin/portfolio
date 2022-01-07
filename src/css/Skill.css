@@ -1,0 +1,44 @@
+.skill {
+    background-color: blueviolet;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.skill-header {
+    text-align: center;
+    font-family: "Satisfy";
+    font-size: 64px;
+    color: white;
+    margin: 0;
+}
+
+.skill-row {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-col {
+    flex: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.skill-HTML {
+    fill: #FF8450;
+}
+
+.skill-CSS {
+    fill: #29A9DF;
+}
+
+.skill-JS {
+    fill: #FFDA3E;
+}
+
+.skill-react {
+    fill: #00D8FF;
+}

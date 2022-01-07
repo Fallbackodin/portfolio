@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import Intro from './components/Intro';
 import About from './components/About';
 import Project from './components/Project'
+import Skill from './components/Skill'
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Intro click={() => scrollToDiv(el2)}/>
       <About />
       <Project reference={el2}/>
+      <Skill />
     </div>
   );
 }
