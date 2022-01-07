@@ -14,11 +14,11 @@
 
 .skill-row {
     display: flex;
-    width: 95%;
-    /* The rules below are if the icons should not take as much horizontal space as well as centering it to the screen
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%; */
+    /* width: 95%; */
+    /* The rules below are if the icons should not take as much horizontal space as well as centering it to the screen */
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
 } 
 
 .skill-col {
@@ -26,7 +26,11 @@
     text-align: center;
     color: white;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 34px;
+}
+
+.skill-icon {
+    width: 75%;
 }
 
 .skill-HTML {
