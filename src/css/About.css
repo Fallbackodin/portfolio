@@ -8,13 +8,19 @@
     color: #ED8EB9;
     text-align: left;
     margin-left: 5%;
+    font-family: 'Satisfy';
+    margin-bottom: 1%;
+    font-size: 96px;
 }
 
 .description {
     text-align: left;
-    font-family: Rambla;
-    color: #7BC0F5;
+    font-family: "Rambla";
+    /* color: #7BC0F5; */
+    color: #4525da;
     font-size: 24px;
+    line-height: 1.75;
+    margin: 0;
 }
 
 .row {
@@ -23,12 +29,9 @@
 
 .column {
     flex: 50%;
+    position: relative;
 }
 
 .left {
     margin-left: 5%;
-}
-
-.profile_picture {
-    
 }

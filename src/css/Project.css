@@ -1,0 +1,47 @@
+.project {
+    background-color: #E270A4;
+    padding-top: 15%;
+}
+
+.project-feature-header {
+    margin: 0;
+    font-family: "Satisfy";
+    font-size: 96px;
+    color: #7BC0F5;
+    text-align: center;
+}
+
+.project-feature-name {
+    margin: 0;
+    color: #FDFD96;
+    font-family: "Satisfy";
+    font-size: 96px;
+    text-align: center;
+}
+
+.project-row {
+    margin: auto;
+    margin-top: 5%;
+    display: table;
+    width: 95%;
+}
+
+.project-column {
+    display: table-cell;
+}
+
+.project-left {
+    padding-right: 3%;
+}
+
+.project-right {
+    vertical-align: top;
+    padding-left: 3%;
+}
+
+.project-sutton-text {
+    margin: 0;
+    text-align: left;
+    font-size: 24px;
+    color: white;
+}
