@@ -4,6 +4,7 @@ import Intro from './components/Intro';
 import About from './components/About';
 import Project from './components/Project'
 import Skill from './components/Skill'
+import Contact from './components/Contact'
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Project reference={el2}/>
       <Skill />
+      <Contact />
     </div>
   );
 }
