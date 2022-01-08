@@ -69,3 +69,28 @@
         margin-top: 50%;
     }
 }
+
+@media only screen and (max-width: 1025px) {
+    .intro {
+        height: 100vh;    
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .intro-name {
+        font-size: 64px;
+        margin-bottom: 5%;
+    }
+
+    .intro-name-text {
+        font-size: 32px;
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        margin-bottom: 5%;
+    }
+
+    .intro-mobile {
+        margin-top: 50%;
+    }
+}

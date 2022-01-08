@@ -62,3 +62,26 @@
         margin-top: 5%;
     }
 }
+
+@media only screen and (max-width: 1025px) {
+    .about-header {
+        font-size: 94px;
+    }
+
+    .about-row {
+        display: block;
+        /* width: 75%; */
+    }
+
+    .about-description {
+        font-size: 32px;
+        width: 90%;
+    }
+
+    .about-profile-picture {
+        width: 60%;
+        height: 10%;
+        margin: auto 20%;
+        margin-top: 5%;
+    }
+}
