@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import axios from "axios"
 import { motion } from "framer-motion"
 import "../css/Contact.css"
 
@@ -10,6 +11,14 @@ export default function Contact() {
         setMessage({...message, [e.target.name]: e.target.value})
     }
     
+    const sendEmail = (e) => {
+        e.preventDefault();
+        console.log(message);
+        axios.post("https://yim-portfolio-backend.herokuapp.com/", message).then((res) => {
+            console.log(res, "RESPONSE FROM SENDING EMAIL");
+          });;
+    }
+
     console.log(message);
 
     return (
@@ -42,7 +51,7 @@ export default function Contact() {
             variants={{ visible: {opacity: 1, scale: 1, y: ["50%", "0%"]}, hidden: {opacity: 0, scale: 1}, }}>
                 <textarea type="text" placeholder="Message" className="contact-message-input" name="message" value={message.message} onChange={change}></textarea>
             </motion.div>
-            <motion.div className="contact-submit-button"
+            <motion.div className="contact-submit-button" onClick={sendEmail}
             initial="hidden"
             whileInView="visible"
             transition={{ duration: 1.5 }}
