@@ -108,3 +108,59 @@
     height: 5%;
     fill: white;
 }
+
+.project-sutton-mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .project-feature-header {
+        font-size: 48px;
+    }
+
+    .project-feature-name {
+        font-size: 48px;
+        width: 95%;
+    }
+
+    .project-row {
+        display: block;
+    }
+
+    .project-column {
+        display: block;
+    }
+
+    .project-sutton {
+        display: none;
+    }
+
+    .project-sutton-mobile {
+        display: block;
+        width: 95%;
+        margin: auto 2.5%;
+    }
+
+    .project-left {
+        width: 100%;
+        padding: auto;
+    }
+
+    .project-right {
+        margin-top: 5%;
+    }
+
+    .project-web-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .project-other-header {
+        margin-bottom: 0%;
+    }
+
+    .project-github-icon {
+        width: 20%;
+    }
+}

@@ -67,6 +67,106 @@ export default function Skill() {
                 <p>WordPress</p>
             </div>
         </motion.div>
+        <div className="skill-row-mobile">
+            <motion.div className="skill-col-mobile"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+            variants={{ visible: {opacity: 1, scale: 1, x: ["-50%", "0%"]}, hidden: {opacity: 0, scale: 1}}}>
+                <DevIcon icon="html5"  className="skill-icon skill-HTML"/>
+                <p>HTML</p>
+            </motion.div>
+            <motion.div className="skill-col-mobile"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+            variants={{ visible: {opacity: 1, scale: 1, x: ["50%", "0%"]}, hidden: {opacity: 0, scale: 1}}}>
+                <DevIcon icon="css3" className="skill-icon skill-CSS"/>
+                <p>CSS</p>
+            </motion.div>
+        </div>
+        <div className="skill-row-mobile">
+            <motion.div className="skill-col-mobile"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+            variants={{ visible: {opacity: 1, scale: 1, x: ["-50%", "0%"]}, hidden: {opacity: 0, scale: 1}}}>
+                <DevIcon icon="javascript"  className="skill-icon skill-JS"/>
+                <p>HTML</p>
+            </motion.div>
+            <motion.div className="skill-col-mobile"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+            variants={{ visible: {opacity: 1, scale: 1, x: ["50%", "0%"]}, hidden: {opacity: 0, scale: 1}}}>
+                <DevIcon icon="react" className="skill-icon skill-react"/>
+                <p>CSS</p>
+            </motion.div>
+        </div>
+        <div className="skill-row-mobile">
+            <motion.div className="skill-col-mobile"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+            variants={{ visible: {opacity: 1, scale: 1, x: ["-50%", "0%"]}, hidden: {opacity: 0, scale: 1}}}>
+                <DevIcon icon="react" className="skill-icon skill-react"/>
+                <p>React Native</p>
+            </motion.div>
+            <motion.div className="skill-col-mobile"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+            variants={{ visible: {opacity: 1, scale: 1, x: ["50%", "0%"]}, hidden: {opacity: 0, scale: 1}}}>
+                <DevIcon icon="code" className="skill-icon skill-code"/>
+                <p>C</p>
+            </motion.div>
+        </div>
+        <div className="skill-row-mobile">
+            <motion.div className="skill-col-mobile"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+            variants={{ visible: {opacity: 1, scale: 1, x: ["-50%", "0%"]}, hidden: {opacity: 0, scale: 1}}}>
+                <DevIcon icon="java" className="skill-icon skill-java"/>
+                <p>Java</p>
+            </motion.div>
+            <motion.div className="skill-col-mobile"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+            variants={{ visible: {opacity: 1, scale: 1, x: ["50%", "0%"]}, hidden: {opacity: 0, scale: 1}}}>
+                <DevIcon icon="git" className="skill-icon skill-git"/>
+                <p>Git</p>
+            </motion.div>
+        </div>
+        <div className="skill-row-mobile">
+            <motion.div className="skill-col-mobile"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+            variants={{ visible: {opacity: 1, scale: 1, x: ["-50%", "0%"]}, hidden: {opacity: 0, scale: 1}}}>
+                <DevIcon icon="github" className="skill-icon skill-github"/>
+                <p>Github</p>
+            </motion.div>
+            <motion.div className="skill-col-mobile"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1.5 }}
+            viewport={{ once: true }}
+            variants={{ visible: {opacity: 1, scale: 1, x: ["50%", "0%"]}, hidden: {opacity: 0, scale: 1}}}>
+                <DevIcon icon="wordpress" className="skill-icon skill-wordpress"/>
+                <p>WordPress</p>
+            </motion.div>
+        </div>
     </div>
     )
 }

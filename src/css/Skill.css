@@ -68,3 +68,33 @@
 .skill-wordpress {
     fill: #00D8FF;
 }
+
+.skill-row-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .skill-header {
+        font-size: 48px;
+    }
+
+    .skill-row {
+        display: none;
+    }
+
+    .skill-row-mobile {
+        display: flex;
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+    }
+
+    .skill-col-mobile {
+        flex: 50%;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+}

@@ -4,7 +4,7 @@
     padding-bottom: 10%;
 }
 
-.header {
+.about-header {
     color: #ED8EB9;
     text-align: left;
     margin-left: 5%;
@@ -13,7 +13,7 @@
     font-size: 96px;
 }
 
-.description {
+.about-description {
     text-align: left;
     font-family: "Rambla";
     /* color: #7BC0F5; */
@@ -23,19 +23,42 @@
     margin: 0;
 }
 
-.row {
+.about-row {
     display: flex;
 }
 
-.column {
+.about-column {
     flex: 50%;
     position: relative;
 }
 
-.left {
+.about-left {
     margin-left: 5%;
 }
 
-.profile-picture {
+.about-profile-picture {
     margin: auto 25%;
+}
+
+@media only screen and (max-width: 480px) {
+    .about-header {
+        font-size: 48px;
+    }
+
+    .about-row {
+        display: block;
+        /* width: 75%; */
+    }
+
+    .about-description {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .about-profile-picture {
+        width: 75%;
+        height: 10%;
+        margin: auto 12.5%;
+        margin-top: 5%;
+    }
 }

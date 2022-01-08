@@ -1,7 +1,8 @@
 import React from "react"
 import { motion } from "framer-motion"
-import DevIcon from "devicon-react-svg";
+import DevIcon from "devicon-react-svg"
 import Sutton from "../SuttonWebsite.svg"
+import SuttonMobile from "../SuttonWebsiteMobile.svg"
 import web from "../website.svg"
 import "../css/Project.css"
 
@@ -24,7 +25,13 @@ export default function Project(prop) {
             variants={{ visible: {opacity: 1, scale: 1, y: ["50%", "0%"]}, hidden: {opacity: 0, scale: 1} }}>Sutton’s Pool Supply INC</motion.h2>
             <div className="project-row">
                 <div className="project-column project-left">
-                    <motion.img src={Sutton}
+                    <motion.img src={Sutton} className="project-sutton"
+                    whileInView={{ x: ["-50%", "0%"] }}
+                    transition={{ duration: 1.5 }}
+                    viewport={{ once: true }}></motion.img>
+                </div>
+                <div className="project-column project-left">
+                    <motion.img src={Sutton} className="project-sutton-mobile"
                     whileInView={{ x: ["-50%", "0%"] }}
                     transition={{ duration: 1.5 }}
                     viewport={{ once: true }}></motion.img>
@@ -53,7 +60,7 @@ export default function Project(prop) {
                 viewport={{ once: true }}
                 transition={{ duration: 1.5 }}>
                     <h2 className="project-first-title">Kindling</h2>
-                    <p className="project-first-desc">A mobile and web application that allows individuals to find a group, and vice versa, for a project. This project implemented a Tinder like system where individuals and groups can swipe left and right on their associated counterpart inorder to find who they are looking for.  My responsibilites for this project were focused towards the mobile-end which we successfully accomplished using React Native, with additions of third party Javascript libraries. 
+                    <p className="project-first-desc">A mobile and web application that allows individuals to find a group, and vice versa, for a project. This project implemented a Tinder like system where individuals and groups can swipe left and right on their associated counterpart inorder to find who they are looking for.
                     <br></br>
                     <br></br>
                     <a href="https://github.com/kiers10/kindling-21-mobile" target="blank"><DevIcon icon="github" className="project-github-icon"/></a></p>

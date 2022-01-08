@@ -76,3 +76,22 @@
     font-size: 24px;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 480px) {
+    .contact-header {
+        font-size: 48px;
+    }
+
+    .contact-upper-input {
+        padding: 10px;
+        padding-top: 15px;
+    }
+
+    .contact-message-input {
+        padding-bottom: 50%;
+    }
+
+    .contact-submit-text {
+        font-size: 18px;
+    }
+}

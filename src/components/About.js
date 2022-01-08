@@ -6,13 +6,13 @@ import ProfilePic from "../ProfilePic.svg"
 export default function About() {
     return (
         <div className="about">
-            <motion.h1 className="header" 
+            <motion.h1 className="about-header" 
             transition={{ duration: 1.25 }}
             whileInView={{ x: ["-100%", "0%"] }}
             viewport={{ once: true }}>About Me</motion.h1>
-            <div className="row">
-                <div className="column left">
-                    <motion.p className="description"
+            <div className="about-row">
+                <div className="about-column about-left">
+                    <motion.p className="about-description"
                     whileInView={{ x: ["-100%", "0%"] }}
                     animate={{x: ["-100%", "0%"] }}
                     transition={{ duration: 1.5 }}
@@ -26,8 +26,8 @@ export default function About() {
                     <br></br>
                     -A big UCF and Jaguars Fans!</motion.p>
                 </div>
-                <div className="column">
-                    <motion.img className="profile-picture" src={ProfilePic}
+                <div className="about-column">
+                    <motion.img className="about-profile-picture" src={ProfilePic}
                     whileInView="visible"
                     transition={{ duration: 1.5 }}
                     initial="hidden"
