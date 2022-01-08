@@ -6,6 +6,7 @@ import "../css/Contact.css"
 export default function Contact() {
     
     const [message, setMessage] = useState({name: "", email: "", message: ""});
+    const [mailCheck, setMailCheck] = useState(-1)
 
     const change = (e) => {
         setMessage({...message, [e.target.name]: e.target.value})
@@ -16,10 +17,12 @@ export default function Contact() {
         console.log(message);
         axios.post("https://yim-portfolio-backend.herokuapp.com/", message).then((res) => {
             console.log(res, "RESPONSE FROM SENDING EMAIL");
-          });;
+            setMailCheck(res.data.success);
+        });;
     }
-
+    
     console.log(message);
+    console.log("this is the check: " + mailCheck);
 
     return (
         <div className="contact">
@@ -51,6 +54,7 @@ export default function Contact() {
             variants={{ visible: {opacity: 1, scale: 1, y: ["50%", "0%"]}, hidden: {opacity: 0, scale: 1}, }}>
                 <textarea type="text" placeholder="Message" className="contact-message-input" name="message" value={message.message} onChange={change}></textarea>
             </motion.div>
+            {mailCheck == 1 ? <p className="contact-mail-status">Mail Sent!</p> : (mailCheck == 0 ? <p className="contact-mail-status">Mail did not send</p> : null)}
             <motion.div className="contact-submit-button" onClick={sendEmail}
             initial="hidden"
             whileInView="visible"
